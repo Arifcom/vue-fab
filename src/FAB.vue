@@ -38,7 +38,7 @@
             <template v-if="mainTooltip">
                 <div v-ripple="rippleColor == 'light' ? 'rgba(255, 255, 255, 0.35)' : ''" @click="toggle = !toggle"
                      v-tooltip="{ content: mainTooltip, placement: tooltipPosition, classes: 'fab-tooltip' }"
-                     class="fab-main pointer" :style="{ 'background-color': bgColor, 'padding': paddingAmount }"
+                     class="fab-main pointer" :style="{ 'background-color': bgColor, 'padding': '14px' }"
                 >
                     <!-- <i :class="[ mainIconSize , { rotate: toggle && allowRotation } ,'material-icons main']">{{mainIcon}}</i>
                     <i :class="[ mainIconSize , { rotate: toggle && allowRotation } ,'material-icons close']">add</i> -->
@@ -47,7 +47,7 @@
             </template>
             <template v-else>
                 <div v-ripple="rippleColor == 'light' ? 'rgba(255, 255, 255, 0.35)' : ''" @click="toggle = !toggle"
-                     class="fab-main pointer" :style="{ 'background-color': bgColor, 'padding': paddingAmount }"
+                     class="fab-main pointer" :style="{ 'background-color': bgColor, 'padding': '14px' }"
                 >
                     <!-- <i :class="[ mainIconSize , { rotate: toggle && allowRotation }, 'material-icons main']">{{mainIcon}}</i>
                     <i :class="[ mainIconSize , { rotate: toggle && allowRotation }, 'material-icons close']">add</i> -->
